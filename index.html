@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝐖𝐨𝐲𝐥𝐚 𝐒𝐭𝐨𝐫𝐞</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>𝐖𝐨𝐲𝐥𝐚 𝐒𝐭𝐨𝐫𝐞</h1>
+  </header>
+
+  <main>
+    <section id="product-list"></section>
+
+    <aside id="cart">
+      <h2>Keranjang</h2>
+      <ul id="cart-items"></ul>
+      <div class="cart-footer">
+        <p>Total: <span id="total-price">Rp 0</span></p>
+        <input type="text" id="whatsapp-number" placeholder="Nomor WhatsApp Kamu">
+        <button id="checkout-btn">Checkout & Bayar</button>
+        <p class="note">⚠ Jangan lupa screenshot bukti pembayaran!<br></p>
+         <p>  🚫 Untuk bot WhatsApp dan buat web hubungi admin dulu!!<br>
+              📞 0895-0938-2153
+        </p>
+
+      </div>
+    </aside>
+
+
+    <div id="qr-modal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Scan QR DANA</h3>
+        <img id="qr-code" alt="QR DANA">
+        <p id="countdown"></p>
+        <button id="confirm-btn">Sudah Transfer</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

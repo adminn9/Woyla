@@ -1,0 +1,122 @@
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #0f0f0f;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(90deg, #0d0d0d,#1a1a1a,#0d0d0d);
+  color: #00ffff;
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+#product-list {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.product {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 1px solid rgba(225, 225, 225, 0.15);
+  box-shadow: 0 4px 12px rgba(0,255,255,0.05);
+  text-align: center;
+}
+.product button {
+  background: linear-gradient(135deg,#00ffff,#007bff);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+.product button:hover {
+  background: linear-gradient(135deg,#00c6ff, #7d2cff);
+  box-shadow: 0 0 20px rgba(125, 44, 225, 0.6);
+}
+
+/* ====== TAMPILAN KERANJANG ====== */
+#cart {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.05);
+  transition: all 0.3 ease;
+}
+
+/* ====== MODAL ====== */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden { display: none; }
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ====== TOMBOL HAPUS (BARU DITAMBAH) ====== */
+.hapus {
+  background: linear-gradient(135deg, #ff0044, #ff6f61);
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.3);
+}
+
+.hapus:hover {
+  background: linear-gradient(135deg, #ff1b6b, #ff8c00);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 60, 100, 0.7);
+}
+
+/* ====== TOMBOL CHECKOUT ====== */
+.checkout, .bayar {
+  background: linear-gradient(135deg, #7d2cff, #00ffff);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(125, 44, 255, 0.3);
+}
+
+.checkout:hover, .bayar:hover {
+  background: linear-gradient(135deg, #00ffff, #7d2cff);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+
+/* ====== PERINGATAN ====== */
+.warning, .note {
+  color: #ffcc00;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+}
